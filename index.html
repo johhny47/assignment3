@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font : google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- link: tailwindcss and daisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss configuration  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+               primary:'rgb(171, 239, 95)',
+              },
+              fontFamily:{
+                manrope:'Manrope'
+              }
+            }
+          }
+        }
+      </script>
+
 </head>
-<body>
+<body class="font-manrope w-11/12 mx-auto">
+   <header>
+    <nav>
+        <div class="navbar bg-base-100 mx-12">
+            <div class="navbar-start">
+              
+             <div  class=" ">
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-2  "></i>
+              <a class="btn btn-ghost text-xl font-extrabold">Rinterio</a>
+             </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="navbar-end hidden lg:flex">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass mr-4 text-[#737373]"></i>
+                    <i class="fa-solid fa-cart-shopping mr-4"></i>
+                </div>
+              <a class="btn rounded-3xl bg-primary">
+                Book Consult
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-2  "></i></a>
+               </div>
+            <div class="dropdown  mx-auto">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <!-- start banner section  -->
+    <section>
+        <!-- image  -->
+         <div class="mx-auto w-96">
+            <img src="./assets/banner.png" alt="">
+         </div>
+         <!-- text  -->
+          <div>
+            <h1 class="text-2xl lg:text-5xl text-center font-extrabold">
+                <span>
+                    A barn house of this design has a
+                </span> <br> 
+                <span class="text-center">
+                    striking appearance
+                </span>
+            
+            </h1>
+            <p class="text-sm text-center mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          </div>
+         
+    </section>
+    <div class="mt-6  mx-24 lg:mx-96">
+      <a class="btn rounded-3xl bg-primary w-80 h-14">
+        Book Consult
+        <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-2 "></i></a>
+    </div>
+   </header>
     
 </body>
 </html>
